@@ -1,9 +1,22 @@
-Như bao người sinh viên học lại Giải Tích điển hình, Lê cũng đã rất khổ sở với nó và luôn muốn né tránh sự thật. Nhưng, sự thật thì vẫn là sự thật: 
 
-<center><strong>"Phải qua môn mới có thể tốt nghiệp"</strong></center>
- sau cơn hồi ức. Anh phát hiện ra câu đố này có thể giúp anh hiểu một khái niệm trong cái môn Giải Tích chết tiệt kia, đó là khái niệm "Tính đơn điệu của hàm số". Câu đố muốn anh phải thay đổi một số chữ cái chuỗi các chữ cái tiếng Anh có sẵn để trở thành một chuỗi có các chữ cái giống nhau. Lê nghĩ: "Câu này quá dễ mà thằng nhóc này cũng phải đem đi hỏi sao. Mà thôi, vì một chút thứ gọi là phần thưởng kia cũng đáng để mà mình bắt tay vào." Sau đó thì anh cũng nâng độ khó hơn nữa là anh chỉ thay đổi ~K~ chữ cái ~C~ mà anh muốn từ ban đầu thôi rồi đếm số chữ cái liên tiếp giống nhau dài nhất. 
+Cho ma trận $N \times N$ biểu thị kết quả thắng/thua của các trận đấu với $A_{ij}$ là kết quả của trận đội $i$ gặp đội $j$ và $A_{ji}$ sẽ ngược lại.
 
-Vấn đề là anh có quá nhiều bộ thử ~(K, C)~ nên anh phải viết một chương trình để có thể tính ~f(K,C)~ giùm anh.
+Nhưng có một đội tuyển $K$ đã "vô tình" được một công ty tài trợ của mình thay đổi kết quả thành toàn thua để có được tiền cá độ tốt nhất.
 
+![](https://i.imgur.com/jg2BDUM.jpg)
 
-#
+Bạn là người của công ty đó và được giao việc là phải xác định sẽ thay đổi kết quả của trận nào để được số tiền nhiều nhất.
+
+Số tiền thu được từ cá độ sẽ được quyết định nhờ vào tỷ lệ trận thắng thua của 2 đội. Đội thua càng nhiều thì khi thắng sẽ được tiền độ càng cao.
+
+Bạn phải xác định thay đổi kết quả của trận nào để có kết quả tốt nhất và in ra đội sẽ phải thay đổi kết quả.
+
+## Input
+
+- Dòng đầu tiên gồm 2 số nguyên $N$ ($2 \le N \le 1000$) và $K$ ($1 \le K \le N$)
+- $N$ dòng tiếp, mỗi dòng gồm $N$ số $A_{ij}$ hoặc là $1$ và $0$ với ý nghĩa đội $i$ đã thắng hay thua đội $j$
+
+## Output
+
+- Dòng đầu tiên in ra 1 số nguyên $B$ là số trận phải thay đổi kết quả.
+- $B$ dòng tiếp theo, mỗi dòng in ra $2$ số nguyên $i$, $j$ biểu thị trận $A_{ij}$ phải thay đổi kết qủa
